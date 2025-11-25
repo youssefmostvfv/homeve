@@ -1,14 +1,37 @@
+/* Cleaned CSS: Only classes used in index.html */
 body{
   font-family: 'Cairo', sans-serif;
   margin: 0;
-  background-color: #111826;
 }
 
 .navbar{
   height: 80px;
   width: 100%;
 }
-
+.herosection{
+  background-image: url("../image/3a247991d9e7450b5a6ed75aa2d7167b.jpg");
+  background-size: cover;
+}
+.hero-section{
+  height: 90vh;
+  background-color: #000000dd;
+}
+.wghd{
+  color: #fff;
+  background-color: #ffffff32;
+  height: 5vh;
+  padding: 10px;
+  width: 18%;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.bref h6{
+  font-size: 12px;
+  color: #db6803;
+  font-weight: bold;
+}
 .navbar-brand{
   color: #fff;
 }
@@ -16,31 +39,31 @@ body{
   color: #fff;
 }
 .nav-link{
-  color: #fff;
-  font-size: 16px;  margin-left: 12px;
+  color: #db6803;
+  font-size: 16px;
+  margin-left: 12px;
   margin-right: 8px;
+  font-weight: bold;
 }
 .nav-link:hover{
-  background-color: #2d323d;
-  color: #fff;
-  border-radius: 5px;
+  background-color: #464c59;
+  color: #db6803c2;
+  border-radius: 10px;
 }
 .hs-title p { 
   font-size: 22px;
 }
 .hs-title h1 {
   font-size:70px ;
-  background: linear-gradient(to right, #de59b6, #ca76e3);
-  -webkit-background-clip: text;   /* قص الخلفية على شكل النص */
-  -webkit-text-fill-color: transparent; /* يجعل النص شفاف ليظهر التدريج */
+  background: linear-gradient(to right, #db6803, #ff7700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .btn-1{
-  background: linear-gradient(to right, hwb(286 29% 15%), #d9277a);
+  background: linear-gradient(to right, #db6803e5, #984802);
   color: white;
-  padding: 15px 25px; 
+  padding: 15px 25px;
   border-radius: 9999999px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   display: inline-block;
 }
 .btn-1:hover{
@@ -51,12 +74,9 @@ body{
 .btn-2{
   color: #fff;
   background-color: #2a303d;
-    padding: 15px 25px; 
+  padding: 15px 25px;
   border-radius: 9999999px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   display: inline-block;
-  
 }
 .btn-2:hover{
   transform: scale(1.05);
@@ -65,363 +85,64 @@ body{
   color: #fff;
 }
 .cardo-2{
-  width: 99%;
   justify-content: center;
-  margin: 7px;
-
+  margin: auto;
 }
 .cardo i{
- color: #c083fc;
-}
-.btu{
-  width: auto;
-  height: 60px;
-  font-size: 21px;
-  margin-top: 30px;
-}
-.cardo{
-  background-color: #1e2533;
-  height: 120px;
-  font-size:15px;
-  border: 2px solid  #382e59;
-  margin-left: 12px;
-  margin-right: 12px;
+ color: #db6803;
+ font-size: 40px;
 }
 .cardo:hover{
-    transform: scale(1.05);
+  transform: scale(1.05);
   transition: transform 0.3s ease;
-  background-color:#333a48 ;
+  background-color:rgba(40, 42, 46, 0.305);
   border-color: #382e59;
 }
-.cardo-3:hover{
-      transform: scale(1.05);
-  transition: transform 0.3s ease;
+.abourr img{
+  width:70%;
+  border-radius: 20px;
 }
-.ico{
-  color: #c083fc;
-  animation: upDown 1s ease-in-out infinite;
-    animation-direction: reverse;
-  display: inline-block;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-@keyframes upDown {
-  0%,100% {
-    transform: translateY(5px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-@media (min-width: 333px) and (max-width: 767.98px) {
-.cardo-2{
-  width: 100%;
-  margin: 0; 
-  padding: 0 10px; 
-}
-  .hs-title h1{
-    font-size: 30px;
-    padding: 5px;
-  }
-  .hs-title p{
-    font-size: 12px;
-    padding: 4px;
-  }
-  .navbar-brand{
-    margin-right: 0;
-  }
-}
-.im-se{
-  background-color: #1c2533;
-  color: #fff;
-  max-width: 100%;
-  text-align: center;
-  color:#c083fc ;
-  font-size: 40px;
-}
-.card-body{
-  background-color: #374152;
-}
-.card{
-    background-color: #374152;
-    text-align: center;
-}
-.card i{
-    text-align: center;
-}
-.hss-title h1 {
-  font-size:50px ;
-  background: linear-gradient(to right, #de59b6, #ca76e3);
-  -webkit-background-clip: text;   /* قص الخلفية على شكل النص */
-  -webkit-text-fill-color: transparent; /* يجعل النص شفاف ليظهر التدريج */
-}
-.im-se h4{
-  font-size: 13px;
-}
-
-.custom-col-xl-4{
-  flex: 0 1 31%;
-  max-width: 31%;
-}
-.h4aa{
-  color: #d8b4fe;
-}
-
-.daro i{ 
-  color: #b982f5;
+#navbarSupportedContent {
+  background-color: #111826;
   padding: 20px;
-}
-.daro{
-  display: block;
-  font-size: 50px;
-  color: #b982f5;
-  background-color: #1c2634;
-  width: 100%;
-  margin: 0; 
-  padding: 10px;
-}
-
-.card-title{
-  color: #b982f5;
-}
-.card-body{
-  background-color: #374152;
-
-}
-.card{
-  width: 420px;
-}
-.Latest-articles{
-  background: linear-gradient(to bottom, #111827, #1e3a8a);
-
-}
-.services-2 {
-  background: linear-gradient(to bottom, #111827, #1e3a8a);
-  line-height: 40px;
+  border-radius: 10px;
   text-align: center;
-}
-.services-2 span{
-  display: block;
-  text-align: center;
-  max-width: 55%;
-  margin: 0;
-  color: #fff;
-  margin: auto;
-  font-size: 19px;
-}
-.ful-image img:hover{    transform: scale(1.05);
-  transition: transform 0.3s ease; }
-
-
-  .ful-image img{
-    padding: 10px;
-  width: 90%;
-  border-radius: 0 50px;
-}
-.ful-con{
-  display: flex;
-}
-.ful-card{
-  display: grid;
-}
-.card-fa{
-  background-color: #263a71;
-  color: #fff;
-  width: 95%; 
-}
-.fa-regular:hover{
-      transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-.fa-regular{
-  margin-left: 15px;
-  margin-right: 15px;
-  color: #c084fc;
-}
-.card-bobi{
-  background-color: #263a71;
-  padding-right: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.card-bobi:hover{
-    background-color: #2e4686;
 }
 .row{
   margin-left: 0;
 }
-.image-2 img{
-  width: 90%;
-  height: 500px;
-  border-radius: 20px;
-  object-fit: cover;
-transition: transform 0.5s ease;
-}
-
-.image-2 img:hover{
-        transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-.card-do{ 
-  background-color:#263353 ;
-   padding: 0;
-    margin: 0;
-    max-width: 390px;
-  }
-.card-bobo{
-  color: white;
-  background-color: #263353;
-}
-.coqw-i{
-  color: #c084fc;
-}
-.coverage-areas{
-  background: linear-gradient(to bottom, #111827, #1e3a8a);
-  line-height: 40px;
-  text-align: center;
-}
-.lumix-panel{
-  color: #fff;
-  background-color: #26396f;
-}
-.lumix-panel .card-body{
-  background-color: #26396f;
-  padding: 0;
-}
-/* .lumix-panel{
-  width: 200px;
-  height: 100px;
-}
- .kairo-wrap {
-  width: 240px;
-  height: 140px;
- } */
- .kairo-wrap  h2{
-  font-size: 16px;
-
-}
- .kairo-wrap  p{
-  font-size: 13px;
-  color: #9ca3af;
-}
- .lumix-panel:hover {
-          transform: scale(1.05);
-  transition: transform 0.3s ease;
- }
-.lumix-panel:hover .coqw-i {
-  color: #df007e;
-}
-.btn-call {
-  display: inline-block;
-  background-color: #111827; 
-  color: white;
-  padding: 12px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 40px;
-  border: 2px solid #ae00ff;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-.btn-call:hover {
-  background-color: #172035; /* أخضر أغمق */
-}
-
-.frosty-box img{
-  border-radius:20px 20px 0 0  ;
-  height: 150px;
-  object-fit: cover;
-}
-.frosty-box .card-body{
-  background-color: #273c78;
-  border-radius:0 0 15px 15px  ;
-
-}
-.frosty-box{
-  border-radius:20px 20px 15px 15px  ;
-}
-.icon-frosty{
-  padding: 3px;
-  margin: 0;
-  color: #9aa2ae;
-}
-.pp-frosty{
-  color: #c084fc;
-}
-.frosty-box {
-  overflow: hidden;  /*  هنا علشان الصور  برا اطار  الكارد تختفي */
-}
-
-.card img {
-  transition: transform 0.4s ease;
-}
-
-.card:hover img {
-  transform: scale(1.1);
-}
-
-
-.card:hover h5 {
-  color: #b67ff3; 
-}
-.card h5 {
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-
-.card .fa-arrow-left {
-  transition: transform 0.3s ease;
-}
-
-.card:hover .fa-arrow-left {
-  transform: translateX(-5px);
-}
-
-/* إلغاء السهم الافتراضي بتاع Bootstrap */
 .accordion-button::after {
-  display: none !important;
+  display: none!important;
 }
-
-/* الزر وقت الفتح أو الإغلاق */
 .accordion-button {
   background-color: #202836;
   color: #fff;
   border: none;
 }
-
-/* عند الفتح */
 .accordion-button:not(.collapsed) {
   background-color: #202836;
   color: #fff;
 }
-
-/* السهم داخل دائرة */
-.accordion-button i {
-  background-color: #2f2d4a;
-  color: white;
-  border-radius: 20px;
-  padding: 6px;
-  font-size: 14px;
-  transition: transform 0.3s ease;
-}
-
-/* دوران السهم عند الفتح */
-.accordion-button:not(.collapsed) i {
-  transform: rotate(180deg);
-}
-
-/* جسم الأكورديون */
 .accordion-body {
   background-color: #252b3c;
   color: #fff;
 }
-.accordion {
-  --bs-accordion-border-color: #202836;
-  --bs-accordion-bg: #202836;
-  border-radius: 50%;
+.fotter{
+  background-color: #1c2634!important;
+  width: 98%;
+  margin: auto;
+  border-radius: 30px 30px 0 0;
 }
-.footer {
-  text-align: end;
-  direction: rtl;
+@media (max-width: 767px) {
+  
+  .cardo-2{ width:100%; padding:0 10px; }
+  .hero-section{ height:92vh; }
+  .cardo{ width:50%; padding:0 10px; }
+  .hs-title h1{ font-size:30px; padding:5px; }
+  .hs-title p{ font-size:12px; padding:4px; }
+  .navbar-brand{ margin-right:0; }
+  .wghd{ width:60%; }
 }
