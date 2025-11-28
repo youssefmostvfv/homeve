@@ -935,3 +935,83 @@ body {
   color: #f97316;
   border: 1px solid rgba(248, 113, 22, 0.4);
 }
+/* ===== Footer Mobile Fix (Responsive) ===== */
+@media (max-width: 575px) {
+
+  .footer-section {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  /* العمود الأول */
+  .footer-brand {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .footer-text {
+    max-width: 100%;
+    margin: 0 auto 18px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* عناوين الأعمدة */
+  .footer-title {
+    text-align: center;
+    font-size: 15px;
+    border-right: none !important;
+    border-bottom: 2px solid #db6803;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  /* الروابط */
+  .footer-links {
+    padding: 0;
+  }
+
+  .footer-links li {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  /* عناصر التواصل */
+  .footer-contact-item {
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .footer-contact-item i {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+
+  .footer-contact-item a,
+  .footer-contact-item span {
+    font-size: 13px;
+  }
+
+  /* الخط السفلي */
+  .footer-bottom {
+    padding-top: 16px;
+    margin-top: 12px;
+  }
+
+  .footer-copy,
+  .footer-dev {
+    font-size: 12px;
+  }
+
+  .footer-dev .brand-name {
+    font-size: 12px;
+  }
+}
