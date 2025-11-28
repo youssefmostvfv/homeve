@@ -12,6 +12,8 @@
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.45);
 }
 
+
+
 *,
 *::before,
 *::after {
@@ -935,6 +937,14 @@ body {
   color: #f97316;
   border: 1px solid rgba(248, 113, 22, 0.4);
 }
+/* Footer Logo Styling */
+.footer-logo img {
+  width: 150px;        /* تقدر تصغّر أو تكبّر */
+  height: auto;        /* يحافظ على الجودة */
+  object-fit: contain;
+  display: block;
+}
+
 /* ===== Footer Mobile Fix (Responsive) ===== */
 @media (max-width: 575px) {
 
@@ -1014,4 +1024,22 @@ body {
   .footer-dev .brand-name {
     font-size: 12px;
   }
+}
+/* Theme Toggle Button */
+.theme-btn {
+  background: #1f2937;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #f9fafb;
+  transition: all 0.25s ease;
+}
+
+.theme-btn:hover {
+  background: #374151;
 }

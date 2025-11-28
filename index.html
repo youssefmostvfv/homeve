@@ -17,6 +17,7 @@
   />
 
   <!-- AOS CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -43,7 +44,7 @@
 <body>
 
   <!-- زر واتساب عائم -->
-  <a href="https://wa.me/966500000000" class="whatsapp-float" target="_blank" aria-label="تواصل واتساب">
+  <a href="https://wa.me/966500000000" class="whatsapp-float" target="_blank" aria-label="تواصل واتساب" style="text-decoration: none;">
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -86,6 +87,7 @@
               احجز الآن
             </a>
           </li>
+          
         </ul>
       </div>
     </div>
@@ -107,13 +109,16 @@
         </div>
 
         <!-- العنوان سطرين -->
-        <h1 class="hero-title mb-3">
-          نقل عفش <span>باحترافية</span><br />
-          داخل جدة
-        </h1>
+          <h1 class="hero-title mb-3"
+             data-aos="zoom-in" data-aos-delay="900" >
+            نقل عفش <span>باحترافية</span><br />
+            داخل جدة
+          </h1>
+
 
         <!-- البراغراف -->
-        <p class="hero-subtitle mb-4 mx-auto" style="max-width: 700px;">
+        <p class="hero-subtitle mb-4 mx-auto" style="max-width: 700px;" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-delay="500">
           نقدم خدمات نقل وتغليف وفك وتركيب الأثاث بأعلى معايير الجودة،
           مع فريق متخصص وشاحنات مجهزة لضمان وصول عفشك بأمان تام وفي الوقت المطلوب.
         </p>
@@ -165,7 +170,7 @@
             <div class="about-img-badge shadow-sm">
               <i class="fa fa-truck-moving"></i>
               <div>
-                <h6 class="mb-0">فريق مدرب</h6>
+                <h6 class="mb-0" >فريق مدرب</h6>
                 <small>متخصص في فك وتركيب ونقل الأثاث</small>
               </div>
             </div>
@@ -238,8 +243,9 @@
       <div class="col-lg-7" data-aos="fade-left">
         <div class="row g-3">
           <div class="col-md-6">
-            <div class="guarantee-card">
-              <div class="guarantee-icon">
+            <div class="guarantee-card" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+              <div class="guarantee-icon" >
                 <i class="fa fa-shield-halved"></i>
               </div>
               <h6>ضمان سلامة الأثاث</h6>
@@ -314,17 +320,17 @@
       </div>
 
       <div class="row g-4">
+
         <div class="col-md-6 col-lg-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fa fa-truck-fast"></i>
-            </div>
-            <h5>نقل عفش داخل جدة</h5>
-            <p>
-              نقل كامل للأثاث داخل جميع أحياء جدة مع فريق مدرب وشاحنات مخصصة للعفش.
-            </p>
-          </div>
-        </div>
+           <div class="service-card">
+             <div class="service-icon">
+             <i class="fa fa-truck-fast"></i>
+             </div>
+              <h5>نقل عفش داخل جدة</h5>
+              <p> نقل كامل للأثاث داخل جميع أحياء جدة مع فريق مدرب وشاحنات مخصصة للعفش. </p>
+             </div>
+             </div>
+
 
         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="service-card">
@@ -778,7 +784,10 @@
 
       <!-- العمود الأول: لوجو + وصف -->
       <div class="col-lg-4 col-md-6">
-        <h4 class="footer-brand mb-3">شركة هوم موڤ</h4>
+        <div class="footer-logo mb-3">
+          <img src="./image/homemov1e.png" alt="شركة هوم موڤ" />
+        </div>
+
         <p class="footer-text">
           نقدم خدمات نقل العفش داخل جدة وخارجها بخبرة سنوات،
           مع فريق متخصص وشاحنات مجهزة لضمان نقل آمن وسريع.
@@ -852,10 +861,12 @@
   <!-- Main JS -->
   <script>
     // AOS
-    AOS.init({
-      duration: 800,
-      once: true
-    });
+AOS.init({
+  duration: 800,
+  once: true,
+  startEvent: 'DOMContentLoaded'
+});
+
 
     // Year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -893,6 +904,11 @@
 
     if (statsSection) observer.observe(statsSection);
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+  AOS.init();
+</script>
 
 </body>
 </html>
