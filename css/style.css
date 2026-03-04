@@ -23,7 +23,9 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+}
+body {
+  padding-top: 90px 0 0 0;
 }
 
 body {
@@ -1099,4 +1101,34 @@ body {
     width: 100%;
     height: 100%;
     border: 0;
+}
+/* =========================================================
+   SEO Content Block
+   ========================================================= */
+#seo-content {
+  background-color: #f8f9fa; /* خلفية فاتحة مريحة للعين */
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+#seo-content h2 {
+  color: var(--accent); /* ربطناه باللون البرتقالي بتاعك */
+  font-size: 24px;
+}
+
+#seo-content h3 {
+  color: #f9fafb;
+  font-size: 18px;
+  border-right: 3px solid var(--accent);
+  padding-right: 10px;
+}
+
+#seo-content p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+#seo-content strong {
+  color: var(--text-main);
+  font-weight: 700;
 }
